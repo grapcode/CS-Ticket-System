@@ -1,0 +1,92 @@
+[
+  {
+    "id": 101,
+    "title": "Login Issue",
+    "description": "User unable to login with correct credentials.",
+    "customer": "John Doe",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "20-09-2025"
+  },
+  {
+    "id": 102,
+    "title": "Payment Failed",
+    "description": "Customer's payment was declined during checkout.",
+    "customer": "Alice Smith",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "19-09-2025"
+  },
+  {
+    "id": 103,
+    "title": "Broken Link on Homepage",
+    "description": "The 'Contact Us' link on the homepage is not working.",
+    "customer": "Michael Johnson",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "18-09-2025"
+  },
+  {
+    "id": 104,
+    "title": "Mobile App Crash",
+    "description": "The app crashes when clicking on 'My Orders'.",
+    "customer": "Emily Davis",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "21-09-2025"
+  },
+  {
+    "id": 105,
+    "title": "Password Reset Not Working",
+    "description": "Customer did not receive a password reset email.",
+    "customer": "Chris Martin",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "22-09-2025"
+  },
+  {
+    "id": 106,
+    "title": "Slow Website Performance",
+    "description": "Website takes more than 10 seconds to load.",
+    "customer": "Sophia Brown",
+    "priority": "Low",
+    "status": "In Progress",
+    "createdAt": "17-09-2025"
+  },
+  {
+    "id": 107,
+    "title": "Email Notification Delay",
+    "description": "Customer not receiving order confirmation emails instantly.",
+    "customer": "David Wilson",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "23-09-2025"
+  },
+  {
+    "id": 108,
+    "title": "Order Not Delivered",
+    "description": "Customer reports order not delivered even after payment.",
+    "customer": "Olivia Taylor",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "15-09-2025"
+  },
+  {
+    "id": 109,
+    "title": "Incorrect Billing",
+    "description": "Customer charged twice for a single order.",
+    "customer": "Daniel Moore",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "16-09-2025"
+  },
+  {
+    "id": 110,
+    "title": "Feature Request",
+    "description": "Customer requested dark mode feature for the app.",
+    "customer": "Emma Anderson",
+    "priority": "Low",
+    "status": "In Progress",
+    "createdAt": "24-09-2025"
+  }
+]

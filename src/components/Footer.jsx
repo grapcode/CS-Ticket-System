@@ -2,7 +2,9 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-gray-300 py-12 mt-8 px-3 ">
+    //  ⚡ Footer section
+
+    <footer className="bg-black text-gray-300 py-12 px-3 ">
       <section className="grid md:grid-cols-5 gap-8 container mx-auto ">
         <div>
           <h3 className="text-white font-semibold mb-2">CS — Ticket System</h3>
