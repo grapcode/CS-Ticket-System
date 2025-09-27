@@ -65,7 +65,7 @@ const Cards = ({ fetchPromise }) => {
           Customer Tickets
         </h2>
 
-        <section className="grid md:grid-cols-9 grid-cols-1 px-3 items-start">
+        <section className="grid md:grid-cols-9 grid-cols-1 px-3 items-start gap-x-5">
           <div className=" col-span-7 grid md:grid-cols-2 grid-cols-1 gap-4">
             {/* ⚡ card map */}
             {data
