@@ -12,7 +12,7 @@ const Cards = ({ fetchPromise }) => {
   // console.log(selectedCard);
 
   const [resolvedCard, setResolvedCard] = useState([]);
-  console.log(resolvedCard);
+  // console.log(resolvedCard);
 
   // ⚡card থেকে click handle
 
@@ -65,8 +65,8 @@ const Cards = ({ fetchPromise }) => {
           Customer Tickets
         </h2>
 
-        <section className="grid md:grid-cols-9 grid-cols-1 px-3">
-          <div className="border col-span-7 grid md:grid-cols-2 grid-cols-1 gap-4">
+        <section className="grid md:grid-cols-9 grid-cols-1 px-3 items-start">
+          <div className=" col-span-7 grid md:grid-cols-2 grid-cols-1 gap-4">
             {/* ⚡ card map */}
             {data
               .filter((card) => card.status !== 'Resolved')
@@ -80,8 +80,9 @@ const Cards = ({ fetchPromise }) => {
                 ></Card>
               ))}
           </div>
+
           {/* ⚡ aside section */}
-          <div className="border col-span-2 px-2 md:mt-0 mt-6">
+          <div className=" col-span-2 px-2 md:mt-0 mt-6">
             <Aside
               selectedCard={selectedCard}
               resolvedCard={resolvedCard}

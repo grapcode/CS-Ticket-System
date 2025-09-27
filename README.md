@@ -1,16 +1,20 @@
-# React + Vite
+✅What is JSX, and why is it used?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+উত্তর: jsx হলো javascrpt XML যা রিয়েক্ট এর একটি syntax extension, যেখানে javascript কোডের ভিতরে html লেখা যায়।
+UI কে সহজভাবে লিখতে ও পড়তে এবং html & javascript কে এক সাথে ব্যবহার করতে ব্যবহার হয়।
 
-Currently, two official plugins are available:
+✅What is the difference between State and Props?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+উত্তর: state --> হলো কম্পোনেন্টের ভিতরের পরিববর্তনযোগ্য data, যেটা setData/setState দিয়ে আপডেট করতে হয়।
+props--> হলো parent থেকে চাইল্ডে data পাঠানো
 
-## React Compiler
+✅What is the useState hook, and how does it work?
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+উত্তর: useState হলো react এর একটি hook যা কম্পোনেন্টের state যোগ করার জন্য ব্যবহার হয়।
+এবং এটা একটি state ভ্যালু এবং ফাংশন রিটান করে।
 
-## Expanding the ESLint configuration
+✅How can you share state between components in React?
+উত্তর: শেয়ার করার উপায় হলে state কে parent কম্পোনেন্টে রাখা, তারপর props এর মাধ্যামে চাইল্ডকে পাঠানো।
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✅How is event handling done in React?
+উত্তর: react এ ইভেন্ট নামগুলো camelCase হবে এবং ইভেন্ট হ্যান্ডেলার হিসাবে function পাস করা হয়।
