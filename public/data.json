@@ -14,7 +14,7 @@
     "description": "Customer's payment was declined during checkout.",
     "customer": "Alice Smith",
     "priority": "Medium",
-    "status": "In Progress",
+    "status": "Open",
     "createdAt": "19-09-2025"
   },
   {
@@ -32,7 +32,7 @@
     "description": "The app crashes when clicking on 'My Orders'.",
     "customer": "Emily Davis",
     "priority": "High",
-    "status": "In Progress",
+    "status": "Open",
     "createdAt": "21-09-2025"
   },
   {
@@ -50,7 +50,7 @@
     "description": "Website takes more than 10 seconds to load.",
     "customer": "Sophia Brown",
     "priority": "Low",
-    "status": "In Progress",
+    "status": "Open",
     "createdAt": "17-09-2025"
   },
   {
@@ -68,7 +68,7 @@
     "description": "Customer reports order not delivered even after payment.",
     "customer": "Olivia Taylor",
     "priority": "Medium",
-    "status": "In Progress",
+    "status": "Open",
     "createdAt": "15-09-2025"
   },
   {
@@ -86,7 +86,7 @@
     "description": "Customer requested dark mode feature for the app.",
     "customer": "Emma Anderson",
     "priority": "Low",
-    "status": "In Progress",
+    "status": "Open",
     "createdAt": "24-09-2025"
   }
 ]

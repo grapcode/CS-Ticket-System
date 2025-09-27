@@ -1,5 +1,7 @@
 import './App.css';
+// rect Toast
 import { ToastContainer } from 'react-toastify';
+// other
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Cards from './components/Cards';

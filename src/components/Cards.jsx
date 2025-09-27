@@ -8,7 +8,10 @@ const Cards = ({ fetchPromise }) => {
   const initialData = use(fetchPromise);
   const [data, setData] = useState(initialData);
   // console.log(data);
-  const [selectedCard, setSelectedCard] = useState([]); // ❌ clicked cards এর জন্য  array
+  const [selectedCard, setSelectedCard] = useState([]); // ⚡ clicked cards এর জন্য  array
+  // console.log(selectedCard);
+
+  const [resolvedCard, setResolvedCard] = useState([]);
 
   // ⚡card থেকে click handle
 
@@ -31,6 +34,25 @@ const Cards = ({ fetchPromise }) => {
     }
   };
 
+  // ⚡ complete btn handle
+  const handleComplete = (card) => {
+    // Task Status থেকে remove
+    const remaining = selectedCard.filter((select) => select.id !== card.id);
+
+    setSelectedCard(remaining);
+
+    // Resolved Task add
+    setResolvedCard([...resolvedCard, { ...card, status: 'Resolved' }]);
+
+    // data update --> cutomer Tickets থেকে remove
+    const updatedData = data.map((ticket) =>
+      ticket.id === card.id ? { ...ticket, status: 'Resolved' } : ticket
+    );
+    setData(updatedData);
+
+    toast.info(`"${card.title}" marked as Completed`);
+  };
+
   return (
     <div className="bg-[#f5f5f5]">
       {/* ⚡ count box component --> 02 */}
@@ -42,22 +64,28 @@ const Cards = ({ fetchPromise }) => {
           Customer Tickets
         </h2>
 
-        <section className="grid md:grid-cols-9 grid-cols-1 ">
+        <section className="grid md:grid-cols-9 grid-cols-1 px-3">
           <div className="border col-span-7 grid md:grid-cols-2 grid-cols-1 gap-4">
             {/* ⚡ card map */}
-            {data.map((card) => (
-              <Card
-                key={card.id}
-                card={card}
-                data={data}
-                setData={setData}
-                onClick={() => handleCardClick(card)}
-              ></Card>
-            ))}
+            {data
+              .filter((card) => card.status !== 'Resolved')
+              .map((card) => (
+                <Card
+                  key={card.id}
+                  card={card}
+                  data={data}
+                  setData={setData}
+                  onClick={() => handleCardClick(card)}
+                ></Card>
+              ))}
           </div>
           {/* ⚡ aside section */}
-          <div className="border col-span-2 px-2">
-            <Aside cards={selectedCard}></Aside>
+          <div className="border col-span-2 px-2 md:mt-0 mt-6">
+            <Aside
+              selectedCard={selectedCard}
+              resolvedCard={resolvedCard}
+              handleComplete={handleComplete}
+            ></Aside>
           </div>
         </section>
       </main>

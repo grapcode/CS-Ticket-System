@@ -1,4 +1,8 @@
 import React from 'react';
+import x from '../assets/x.svg';
+import i from '../assets/i.svg';
+import f from '../assets/f.svg';
+import m from '../assets/m.svg';
 
 const Footer = () => {
   return (
@@ -42,10 +46,38 @@ const Footer = () => {
         <div>
           <h4 className="text-white font-semibold mb-2">Social Links</h4>
           <ul className="space-y-1 text-sm">
-            <li>@CS — Ticket System</li>
-            <li>@CS — Ticket System</li>
-            <li>@CS — Ticket System</li>
-            <li>support@cst.com</li>
+            <li className="flex ">
+              <img
+                className="bg-white w-5 h-5 mr-2 rounded-full p-[2px] mb-2"
+                src={x}
+                alt=""
+              />
+              CS — Ticket System
+            </li>
+            <li className="flex">
+              <img
+                className="bg-white w-5 h-5 mr-2 rounded-full p-[2px] mb-2"
+                src={i}
+                alt=""
+              />
+              CS — Ticket System
+            </li>
+            <li className="flex">
+              <img
+                className="bg-white w-5 h-5 mr-2 rounded-full p-[2px] mb-2"
+                src={f}
+                alt=""
+              />
+              CS — Ticket System
+            </li>
+            <li className="flex">
+              <img
+                className="bg-white w-5 h-5 mr-2 rounded-full p-[2px] mb-2"
+                src={m}
+                alt=""
+              />
+              support@cst.com
+            </li>
           </ul>
         </div>
       </section>
