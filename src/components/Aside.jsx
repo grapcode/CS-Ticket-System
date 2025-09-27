@@ -44,8 +44,9 @@ const Aside = ({ selectedCard, resolvedCard, handleComplete }) => {
             resolvedCard.map((card) => (
               <div key={card.id} className="bg-green-100 rounded-md p-2 my-3">
                 <h2 className="text-lg font-semibold mb-2 text-[#34485A]">
-                  ✅ {card.title} Completed
+                  {card.title}
                 </h2>
+                <p className="text-green-700 font-semibold">✅ Completed</p>
               </div>
             ))
           )}

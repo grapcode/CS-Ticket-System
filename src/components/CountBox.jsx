@@ -8,6 +8,7 @@ const CountBox = ({ data }) => {
     (element) => element.status == 'In-Progress'
   );
   const resolvedData = data.filter((element) => element.status == 'Resolved');
+
   return (
     <div>
       {/* ⚡ count component  */}

@@ -12,12 +12,13 @@ const Cards = ({ fetchPromise }) => {
   // console.log(selectedCard);
 
   const [resolvedCard, setResolvedCard] = useState([]);
+  console.log(resolvedCard);
 
   // ⚡card থেকে click handle
 
   const handleCardClick = (clickedCard) => {
     // Toast
-    toast.success(`"${clickedCard.title}" is now In-Progress`);
+    toast.success('In - Progress');
 
     // countBox update
     const updatedData = data.map((card) =>
@@ -26,7 +27,7 @@ const Cards = ({ fetchPromise }) => {
     setData(updatedData);
 
     // aside update
-    if (!selectedCard.find((card) => card.id === clickedCard.id)) {
+    if (!selectedCard.find((card) => card.id == clickedCard.id)) {
       setSelectedCard([
         ...selectedCard,
         { ...clickedCard, status: 'In-Progress' },
@@ -50,7 +51,7 @@ const Cards = ({ fetchPromise }) => {
     );
     setData(updatedData);
 
-    toast.info(`"${card.title}" marked as Completed`);
+    toast.success(`Completed`);
   };
 
   return (
